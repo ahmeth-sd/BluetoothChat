@@ -1,4 +1,4 @@
-# Android Bluetooth Chat App (Part 1)
+# Android Bluetooth Chat App 
 
 This repository contains the initial code for an Android Bluetooth Chat App, following a tutorial series. In this first part, we focus on:
 
@@ -40,7 +40,7 @@ This repository contains the initial code for an Android Bluetooth Chat App, fol
 
 ## Setup
 
-1. Clone this repository: `git clone https://github.com/your-username/android-bluetooth-chat-app.git`
+1. Clone this repository: `git clone https://github.com/ahmeth-sd/BluetoothChat.git`
 2. Open the project in Android Studio.
 3. Build and run the app on two separate Android devices.
 
