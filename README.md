@@ -1,11 +1,13 @@
 # Android Bluetooth Chat App 
 
-This repository contains the initial code for an Android Bluetooth Chat App, following a tutorial series. In this first part, we focus on:
+This repository contains the initial code for an Android Bluetooth Chat App,  In this first part, we focus on:
 
 * Scanning for nearby Bluetooth devices
 * Displaying paired and discovered devices
 * Starting and stopping the discovery process
+* Sending messages via Bluetooth connection
 * Building a solid foundation with clean architecture
+  
 
 ## Table of Contents
 
@@ -50,16 +52,19 @@ This repository contains the initial code for an Android Bluetooth Chat App, fol
 2. The app will automatically start scanning for Bluetooth devices.
 3. Tap the "Start Scan" button to refresh the list if needed.
 4. Tap the "Stop Scan" button to halt the discovery process.
+5. On one device, tap the "Start Server" button.
+6. On the other device, find the server device in the list and tap to connect.
+7. Once connected, the chat screen will appear on both devices.
+8. Type messages in the text field and tap "Send" to exchange messages.
 
 ## Important Notes
 
-* This is the first part of a multi-part tutorial. Device connection and chat functionality will be added in subsequent parts.
 * Testing on physical devices is highly recommended, as emulators may have limitations with Bluetooth simulation.
 
 ## Future Enhancements
 
 * Implement device connection and data transfer.
-* Add chat messaging interface.
+* Implement SOS Location Sending
 * Handle error cases and edge scenarios.
 * Improve UI/UX design.
 
