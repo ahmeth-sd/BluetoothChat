@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace 'com.plcoding.bluetoothchat'
+    namespace 'com.gazi.bluetoothchat'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.plcoding.bluetoothchat"
+        applicationId "com.gazi.bluetoothchat"
         minSdk 24
         targetSdk 33
         versionCode 1
