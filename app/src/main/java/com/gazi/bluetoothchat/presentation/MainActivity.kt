@@ -3,7 +3,9 @@ package com.gazi.bluetoothchat.presentation
 import android.Manifest
 import android.bluetooth.BluetoothAdapter
 import android.bluetooth.BluetoothManager
+import android.content.Context
 import android.content.Intent
+import android.location.LocationManager
 import android.os.Build
 import android.os.Bundle
 import android.widget.Toast
@@ -28,6 +30,7 @@ import com.gazi.bluetoothchat.presentation.components.DeviceScreen
 import com.gazi.bluetoothchat.ui.theme.BluetoothChatTheme
 import dagger.hilt.android.AndroidEntryPoint
 
+
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
@@ -40,6 +43,7 @@ class MainActivity : ComponentActivity() {
 
     private val isBluetoothEnabled: Boolean
         get() = bluetoothAdapter?.isEnabled == true
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -71,6 +75,7 @@ class MainActivity : ComponentActivity() {
             )
         }
 
+
         setContent {
             BluetoothChatTheme {
                 val viewModel = hiltViewModel<BluetoothViewModel>()
@@ -95,6 +100,8 @@ class MainActivity : ComponentActivity() {
                         ).show()
                     }
                 }
+
+
 
                 Surface(
                     color = MaterialTheme.colors.background
@@ -130,5 +137,6 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+
     }
 }
