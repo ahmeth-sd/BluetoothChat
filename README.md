@@ -1,11 +1,12 @@
 # Android Bluetooth Chat App 
 
-This repository contains the initial code for an Android Bluetooth Chat App,  In this first part, we focus on:
+This Android app provides a lifeline during emergencies like earthquakes when traditional communication networks fail. It enables direct communication and location sharing between individuals and rescue teams using Bluetooth technology.
 
 * Scanning for nearby Bluetooth devices
 * Displaying paired and discovered devices
 * Starting and stopping the discovery process
 * Sending messages via Bluetooth connection
+* Quickly send a distress message with your location to nearby devices.
 * Building a solid foundation with clean architecture
   
 
@@ -16,9 +17,9 @@ This repository contains the initial code for an Android Bluetooth Chat App,  In
 * [Prerequisites](#prerequisites)
 * [Setup](#setup)
 * [Usage](#usage)
-* [Important Notes](#important-notes)
+* [Important Notes](#technical-details)
 * [Future Enhancements](#future-enhancements)
-* [License](#license)
+
 
 ## Features
 
@@ -26,6 +27,7 @@ This repository contains the initial code for an Android Bluetooth Chat App,  In
 * **Bluetooth Scanning:**  Robustly scans for both paired and unpaired Bluetooth devices.
 * **Device Listing:**  Presents discovered devices in a user-friendly list.
 * **Discovery Control:**  Allows the user to initiate and stop the Bluetooth discovery process.
+* **SOS Functionality:** Quickly send a distress message with your location to nearby devices.
 * **Dagger Hilt:**  Uses Dagger Hilt for dependency injection, simplifying object creation and management.
 
 ## Project Structure
@@ -36,9 +38,8 @@ This repository contains the initial code for an Android Bluetooth Chat App,  In
 
 ## Prerequisites
 
-* Android Studio (Bumblebee or later recommended)
-* Two physical Android devices (emulators may not fully support Bluetooth testing)
-* Basic understanding of Kotlin and Android development
+* Android device with Bluetooth capability.
+* Location services enabled on your device.
 
 ## Setup
 
@@ -48,24 +49,28 @@ This repository contains the initial code for an Android Bluetooth Chat App,  In
 
 ## Usage
 
-1. Grant the app the necessary Bluetooth permissions when prompted.
-2. The app will automatically start scanning for Bluetooth devices.
-3. Tap the "Start Scan" button to refresh the list if needed.
-4. Tap the "Stop Scan" button to halt the discovery process.
-5. On one device, tap the "Start Server" button.
-6. On the other device, find the server device in the list and tap to connect.
-7. Once connected, the chat screen will appear on both devices.
-8. Type messages in the text field and tap "Send" to exchange messages.
+1. Pairing:
+ * Open the app on both devices.
+ * Tap the "Scan" button to discover nearby devices.
+ * Select the device you want to connect to and tap "Pair."
+2. Chatting:
+ * Once paired, you can send and receive text messages.
+3. SOS Location Sharing:
+ * In an emergency, tap the "SOS" button.
+ * Your location will be sent as a message to the connected device.
 
-## Important Notes
-
+## Technical Details
+* Languages: Java, Kotlin
+* Architecture: MVC (Model-View-Controller)
+* Dependency Management: Dagger Hilt
+* Bluetooth Library: Android Bluetooth API
+* IDE: Android Studio
 * Testing on physical devices is highly recommended, as emulators may have limitations with Bluetooth simulation.
 
 ## Future Enhancements
 
-* Implement device connection and data transfer.
-* Implement SOS Location Sending
-* Handle error cases and edge scenarios.
-* Improve UI/UX design.
-
+* Multimedia Sharing: Share images and videos.
+* Voice Communication: Enable voice messaging.
+* Offline Maps: Integrate offline maps for navigation and location sharing without internet.
+* Emergency Services Integration: Directly relay SOS messages and location data to emergency responders.
 
